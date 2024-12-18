@@ -141,7 +141,7 @@ func (t *TicTacToe) IsOver(x int, y int) bool {
 	// validate diag 2
 	count = 1
 	for i := 1; i < GridSize; i++ {
-		if t.grid[i][GridSize-i] == t.grid[i-1][GridSize-i-1] {
+		if t.grid[i][GridSize-i-1] == t.grid[i-1][GridSize-i-2] {
 			count++
 		}
 	}
